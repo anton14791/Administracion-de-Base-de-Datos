@@ -1,0 +1,10 @@
+inscripcionadd.aspx
+inscripcion.aspx
+
+matriculaadd.aspx
+matricula.aspx
+
+especialidad.aspx
+periodo.aspx
+aulaadd.aspx
+aulas.aspx

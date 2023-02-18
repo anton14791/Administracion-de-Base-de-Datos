@@ -1,0 +1,37 @@
+DML:  Lenguaje de manipulación de Datos
+
+EJEMPLO DML: UPDATE es para actualizar.
+             INSERT es para insertar. 
+             SELECT es para seleccionar. 
+             DELETE es para eliminar.
+
+
+DDL:  Lenguaje de Definición de Datos
+
+EJEMPLO DDL: CREATE es para crear tablas, base de datos,
+             listar, usuarios, almacenamientos, roles.
+             ALTER es para alterar todo lo mencionado en create. 
+             DROP eliminar base de datos, tablas, todo lo creado. 
+             TRUNCATE es para reiniciar hasta el ID. resetear
+             (formatear, limpiar toda una tabla)
+
+-----------------------------------------------------------------
+MSDB: No debemos eliminar porque es el que hace las copias de 
+      seguridad y además ahi se almacenan todas las tablas.
+
+MODEL: Es una plantilla. Ejemplo si ponemos create database
+-----------------------------------------------------------------
+select * from sys.databases
+
+SIRVE PARA VER TODAS LAS BASES DE DATOS CREADAS.
+
+
+select * from sys.sql_logins
+
+SIRVE PARA VER LOS USUARIOS O LOGEADOS DE ACCESO AL SERVIDOR.
+
+
+
+
+
+

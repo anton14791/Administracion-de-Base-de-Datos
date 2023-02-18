@@ -1,0 +1,23 @@
+create procedure Sp_Operaciones_Categoria
+@opcion					varchar(5)='OPC1',
+@NombreCategoria		varchar(50)='',
+@IdCategoria			int=0
+as
+begin
+	if @opcion='OPC1' -- LISTAR
+	begin
+		select * from Categoria
+	end
+	else if @opcion='OPC2' -- INSERTAR
+	begin
+		insert into Categoria(NombreCategoria) values (@NombreCategoria)
+	end
+	else if @opcion='OPC3' -- ACTUALIZAR
+	begin
+		update Categoria set NombreCategoria=@NombreCategoria where IdCategoria=@IdCategoria
+	end
+	else -- ELIMINAR
+	begin
+		delete from Categoria where IdCategoria=@IdCategoria
+	end
+end
